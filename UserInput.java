@@ -94,9 +94,9 @@ public class UserInput{
         }
         System.out.println("Standard Deviation: " + calculator.standardDeviation(arr));
       }
+
       //default condition of switch case  
       default -> System.out.println("Invalid choice!");  
       }  
-        
     }
   }
