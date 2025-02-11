@@ -61,7 +61,7 @@ public class UserInput{
         }
         System.out.println("Sum: " + calculator.sumArray(arr));
       }
-            
+
       case 7 -> {
         System.out.println("Enter array size:");
         int size = scan.nextInt();
@@ -72,7 +72,7 @@ public class UserInput{
         }
         System.out.println("Mean: " + calculator.mean(arr));
       }
-            
+
       case 8 -> {
         System.out.println("Enter array size:");
         int size = scan.nextInt();
@@ -83,7 +83,7 @@ public class UserInput{
         }
         System.out.println("Variance: " + calculator.variance(arr));
       }
-            
+
       case 9 -> {
         System.out.println("Enter array size:");
         int size = scan.nextInt();
@@ -93,7 +93,10 @@ public class UserInput{
           arr[i] = scan.nextDouble();
         }
         System.out.println("Standard Deviation: " + calculator.standardDeviation(arr));
+      }
+      //default condition of switch case  
+      default -> System.out.println("Invalid choice!");  
       }  
-
+        
     }
   }
