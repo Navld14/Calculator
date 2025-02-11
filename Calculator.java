@@ -46,8 +46,18 @@ public class Calculator {
 
         return sum;
     }
+
   //Creating method for mean of the array
   public double mean(double[] arr) {
         return sumArray(arr) / arr.length;
+    }
+  //Creating method for the Variance
+  public double variance(double[] arr) {
+        double mean = mean(arr);
+        double sum = 0;
+        for (double num : arr) {
+            sum += Math.pow(num - mean, 2);
+        }
+        return sum / arr.length;
     }
 }
